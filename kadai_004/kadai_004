@@ -1,0 +1,55 @@
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) hayashietsukonoMacBook:Github hayashietsuko$ cd git_challenge
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /Users/hayashietsuko/atelier/terakoya/Github/git_challenge/.git/
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git add hello_world.txt
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git add hello_world.txt
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git commit -m "hello_world.txtを追加"
+[master (root-commit) 3ddfa92] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git status
+On branch master
+nothing to commit, working tree clean
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git add hello_world.txt
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git commit -m "日本語訳を追記"
+[master 76b0697] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git status
+On branch master
+nothing to commit, working tree clean
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ git log --oneline
+76b0697 (HEAD -> master) 日本語訳を追記
+3ddfa92 hello_world.txtを追加
+(base) hayashietsukonoMacBook:git_challenge hayashietsuko$ 
